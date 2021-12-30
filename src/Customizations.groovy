@@ -10,11 +10,11 @@ class Customizations {
         
         // Environment variables
         TerraformEnvironmentStage
-            .withGlobalEnv("LOWERS_AWS_ROLE_ARN",              "arn:aws:iam::677700034553:role/demo")
-            .withGlobalEnv("QA_AWS_ROLE_ARN",                  "arn:aws:iam::677700034553:role/demo")
-            .withGlobalEnv("S3_BACKEND_REGION",                "ap-southeast-1")
-            .withGlobalEnv("LOWERS_S3_BACKEND_BUCKET",         "cloudstate-nathantr")
-            .withGlobalEnv("QA_S3_BACKEND_BUCKET",             "cloudstate-nathantr")
+            .withGlobalEnv("DEV_AWS_ROLE_ARN",              "arn:aws:iam::677700034553:role/demo")
+            .withGlobalEnv("QA_AWS_ROLE_ARN",               "arn:aws:iam::677700034553:role/demo")
+            .withGlobalEnv("S3_BACKEND_REGION",             "ap-southeast-1")
+            .withGlobalEnv("DEV_S3_BACKEND_BUCKET",         "cloudstate-nathantr")
+            .withGlobalEnv("QA_S3_BACKEND_BUCKET",          "cloudstate-nathantr")
         
         // AWS Tagging Standard
         TagPlugin
