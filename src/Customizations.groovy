@@ -1,5 +1,8 @@
 class Customizations {
     public static void init() {       
+        // Execute the Pipeline on an agent available in the Jenkins environment with the provided label
+        Jenkinsfile.defaultNodeName = "kitchensink_apms"
+        
         // This is used to deploy to the AWS Prod Account (home of UAT and Prod) environments
         WithAwsPlugin.withRole().init()
         
