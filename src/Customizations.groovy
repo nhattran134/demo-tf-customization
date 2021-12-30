@@ -24,9 +24,6 @@ class Customizations {
             .withTag("Team", "nathantr")
             .init()
         
-        // Colorize the plan output
-        AnsiColorPlugin.init()
-        
         // Store state in S3
         S3BackendPlugin.init()
     }
